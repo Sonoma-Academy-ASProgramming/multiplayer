@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="/socket.io/socket.io.js'"></script>
   <meta charset="utf-8">
   <title>Multiplayer Game</title>
 </head>
 <body>
   <h1>Welcome!</h1>
+  <script>
+    var socket = io();
+    socket.on('hello', (data) => {
+      console.log('connection established');
+    });
+  </script>
 </body>
 </html>
